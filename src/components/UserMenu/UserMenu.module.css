@@ -44,7 +44,19 @@
     border-radius: 0.5rem;
     margin-top:1.5rem;
     right:20px;
-    animation: slideIn 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropDownOpen {
+    transform: translateY(-0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropDownClose {
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .positiveActionList{
@@ -67,18 +79,4 @@
 
 .action:hover{
     background-color: var(--secondary-color-light);
-}
-
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-25px);
-        -webkit-transform: translateY(-25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-    }
 }

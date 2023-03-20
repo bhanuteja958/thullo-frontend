@@ -1,0 +1,39 @@
+.boardsContainer{
+    margin: 3rem auto 0 auto;
+    width: 80%;
+}
+
+.boardsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boardsHeading{
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h6-size);
+}
+
+.addBoardBtn{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.3rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+
+.boards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+}
+
+.boardUsers{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}

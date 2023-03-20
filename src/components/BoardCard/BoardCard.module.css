@@ -1,0 +1,46 @@
+.board{
+    background-color: var(--light-color);
+    padding:1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px var(--shadow-color-light);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.board:hover{
+    box-shadow: 0px 4px 12px var(--shadow-color-regular);
+}
+
+.boardInfo{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.boardCoverPhoto {
+    height:200px;
+    border-radius: 0.5rem;
+    object-fit: cover;    
+}
+
+.boardTitle{
+    font-family: var(--secondary-font-family);
+    font-size: var(--h5-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.boardUsers {
+    display: flex;
+    align-items: center;
+    gap:1rem; 
+    margin-top:1rem;
+}
+
+.userPic{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 0.5rem;
+}
+
+.moreUserCount{
+    color: var(--secondary-color);
+}

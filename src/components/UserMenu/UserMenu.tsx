@@ -12,7 +12,7 @@ const UserMenu:FC<UserMenuProps> = () => {
     const [displayDropDown, setDisplayDropDown] = useState<boolean>(false);
 
     const toggleDropDownDisplay = () => {
-        setDisplayDropDown(!displayDropDown);
+        setDisplayDropDown((prev) => !prev );
     }
 
     return (
@@ -25,24 +25,21 @@ const UserMenu:FC<UserMenuProps> = () => {
                     <span>John Doe</span>
                     <FontAwesomeIcon icon={faCaretDown} className={classes.caretDown}/>
                 </p>
-                {displayDropDown ? (
-                    <div className={classes.dropDown}>
-                        <ul className={classes.positiveActionList}>
-                            <li className={classes.action}>
-                                <FontAwesomeIcon icon={faUserCircle}/>
-                                <p className={classes.actionName}>My Profile</p>
-                            </li>
-                        </ul>
-                        <hr />
-                        <ul className={classes.negativeActionList}>
-                            <li className={classes.action}>
-                                <FontAwesomeIcon icon={faArrowAltCircleRight}/>
-                                <p className={classes.actionName}>Logout</p>
-                            </li>
-                        </ul>
-                    </div>
-                ) : null}
-                
+                <div className={displayDropDown ? `${classes.dropDown} ${classes.dropDownOpen}` : `${classes.dropDownClose} ${classes.dropDown}`}>
+                    <ul className={classes.positiveActionList}>
+                        <li className={classes.action}>
+                            <FontAwesomeIcon icon={faUserCircle}/>
+                            <p className={classes.actionName}>My Profile</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <ul className={classes.negativeActionList}>
+                        <li className={classes.action}>
+                            <FontAwesomeIcon icon={faArrowAltCircleRight}/>
+                            <p className={classes.actionName}>Logout</p>
+                        </li>
+                    </ul>
+                </div> 
             </div>
         </div>
     );
