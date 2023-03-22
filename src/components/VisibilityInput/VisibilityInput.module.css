@@ -1,0 +1,69 @@
+.visibilityInputContainer{
+    width:max-content;
+    position: relative;
+}
+
+.selectedVisibility{
+    background-color: var(--secondary-color-light);
+    color:  var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    font-size: var(--normal-size);
+     cursor: pointer;
+}
+
+.optionDropdown{
+    position: absolute;
+    background-color: var(--light-color);
+    padding: 1rem;
+    width:max-content;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 2px var(--shadow-color-light);
+    margin-top:1rem;
+}
+
+.dropDownTitle{
+    font-weight: var(--font-semi-bold);
+}
+
+.dropDownSubTitle{
+    font-family: var(--secondary-font-family);
+}
+
+.options{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+    margin-top: 1rem;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    gap:0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.option:hover{
+    background-color: var(--secondary-color-light);
+}
+
+.optionName{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    color: var(--dark-color);
+    font-weight: var(--font-medium);
+}
+
+.optionDescription{
+    font-size: var(--small-size);
+    color: var(--secondary-color);
+}

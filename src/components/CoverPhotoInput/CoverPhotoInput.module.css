@@ -1,0 +1,83 @@
+.coverPhotoInputContainer{
+    width:max-content;
+    position: relative;
+
+}
+
+.coverPhotoInput{
+    background-color: var(--secondary-color-light);
+    color: var(--secondary-color);
+    font-size: var(--normal-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    gap:1rem;
+    border-radius:0.5rem;
+    cursor: pointer;
+}
+
+.coverPhotoDropDown{
+    position: absolute;
+    width:350px;
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 2px 2px var(--shadow-color-light);
+}
+
+.dropDownTitle{
+    font-weight: var(--font-semi-bold);
+}
+
+.dropDownSubTitle{
+    font-family: var(--secondary-font-family);
+}
+.photoSearchInputContainer{
+    width:100%;
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto max-content;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px var(--shadow-color-medium);
+}
+
+.photoSearchBtn{
+    padding:0.5rem 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 0.5rem;
+    border:0;
+    outline:none;
+    cursor: pointer;
+}
+
+.photoSearchInput{
+    padding:0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border:0;
+    outline:none;
+}
+
+.coverPhotosContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+    margin-top:1.5rem;
+}
+
+.coverPhoto{
+    width:100%;
+    height:60px;
+    object-fit: cover; 
+    border-radius:0.5rem; 
+    cursor: pointer;  
+    transition: all 0.3s ease-in-out;
+}
+
+.coverPhoto:hover{
+    filter: brightness(80%);
+}
