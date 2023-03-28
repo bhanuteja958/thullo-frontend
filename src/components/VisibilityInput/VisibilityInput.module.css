@@ -13,7 +13,7 @@
     justify-content: center;
     padding: 0.5rem 2rem;
     font-size: var(--normal-size);
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .optionDropdown{
@@ -24,6 +24,7 @@
     border-radius: 0.5rem;
     box-shadow: 0px 0px 2px 2px var(--shadow-color-light);
     margin-top:1rem;
+    z-index:5
 }
 
 .dropDownTitle{

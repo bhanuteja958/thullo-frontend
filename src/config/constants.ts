@@ -1,0 +1,3 @@
+export const LABEL_COLORS = [
+    "219653", "F2994A", "EB5757", "2F80ED", "333333", "4F4F4F", "828282",
+]

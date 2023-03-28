@@ -7,6 +7,7 @@ import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import List from '../../components/List/List';
 import AddUserInput from '../../components/AddUserInput/AddUserInput';
 import EditBoard from '../../components/EditBoard/EditBoard';
+import LabelInput from '../../components/LabelInput/LabelInput';
 
 const users = [
     {
@@ -43,6 +44,7 @@ const Board:FC<{}> = () => {
             <div className={classes.boardHeader}>
                 <div className={classes.boardHeaderLeft}>
                     <VisibilityInput />
+                    <LabelInput />
                     <div className={classes.boardUsers}>
                         {users.map((user:BoardUser) => (
                             <img src={user.profilePic} alt="User profile picture" className={classes.userImage}/>

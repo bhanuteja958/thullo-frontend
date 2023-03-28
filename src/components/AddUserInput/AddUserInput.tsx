@@ -7,6 +7,7 @@ import classes from './AddUserInput.module.css';
 interface AddUserInputProps {
 
 }
+
 const AddUserInput:FC<AddUserInputProps> = (props) => {
     const [displayDropDown, setDisplayDropDown] = useState<boolean>(false);
 
@@ -32,7 +33,7 @@ const AddUserInput:FC<AddUserInputProps> = (props) => {
                 <FontAwesomeIcon icon={faPlus}/>
             </button>
             {displayDropDown ? (
-                <div className={classes.dropDown}>
+                <div className={classes.dropDown} onClick={(event:MouseEvent) => {event.stopPropagation();}}>
                     <div className={classes.dropDownHeader}>
                         <p className={classes.dropDownTitle}>Invite to Board</p>
                         <p className={classes.dropDownSubTitle}>Search users you want to invite to</p>
