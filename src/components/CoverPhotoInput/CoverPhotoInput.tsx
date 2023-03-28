@@ -1,6 +1,7 @@
 import { faImage, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {FC, MouseEvent, useEffect, useState} from 'react';
+import MiniSearchBar from '../MiniSearchBar/MiniSearchBar';
 import classes from './CoverPhotoInput.module.css';
 
 const unsplashPhotos: string[] = [
@@ -30,15 +31,15 @@ const CoverPhotoInput:FC<CoverPhotoInputProps> = () => {
     }
 
     useEffect(() => {
-    const windowClickListener = () => {
-        setDisplayDropDown(false);
-    }
+        const windowClickListener = () => {
+            setDisplayDropDown(false);
+        }
 
-    window.addEventListener('click', windowClickListener);
+        window.addEventListener('click', windowClickListener);
 
-    return () => {
-        window.removeEventListener('click', windowClickListener)
-    }
+        return () => {
+            window.removeEventListener('click', windowClickListener)
+        }
     })
 
     return (
@@ -51,12 +52,7 @@ const CoverPhotoInput:FC<CoverPhotoInputProps> = () => {
                 <div className={classes.coverPhotoDropDown} onClick={(event:MouseEvent) => {event.stopPropagation()}}>
                     <p className={classes.dropDownTitle}>Photo Search</p>
                     <p className={classes.dropDownSubTitle}>Search Unsplash for photos</p>
-                    <div className={classes.photoSearchInputContainer}>
-                        <input type="text" className={classes.photoSearchInput} placeholder="Keywords..." />
-                        <button className={classes.photoSearchBtn}>
-                            <FontAwesomeIcon icon={faSearch} />
-                        </button> 
-                    </div>
+                    <MiniSearchBar placeHolder="Keyword..."/>
                     <div className={classes.coverPhotosContainer}>
                         {unsplashPhotos.map((photoUrl:string) => (
                             <img className={classes.coverPhoto} src={photoUrl} alt="A Cover Photo" onClick={() => {coverPhotoInputHandler(photoUrl)}}/>

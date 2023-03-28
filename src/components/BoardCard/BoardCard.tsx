@@ -1,10 +1,6 @@
 import {FC, useEffect, useState} from 'react';
+import { BoardUser } from '../../config/types';
 import classes from './BoardCard.module.css';
-
-interface BoardUser {
-    name: string
-    profilePic: string
-}
 
 interface BoardCardProps {
     id: string

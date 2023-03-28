@@ -1,0 +1,51 @@
+.boardContainer{
+    position: relative;
+}
+.boardHeader{
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.boardHeaderLeft{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.boardUsers {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.userImage{
+    width:40px;
+    height:40px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.showMenuBtn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border:0;
+    outline:none;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    font-size: var(--normal-size);
+    color: var(--secondary-color);
+    background-color: var(--secondary-color-light);
+    text-align: center;
+    cursor: pointer;
+}
+
+.listsContainer{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap:2rem
+}

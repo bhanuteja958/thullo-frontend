@@ -1,0 +1,27 @@
+.photoSearchInputContainer{
+    width:100%;
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto max-content;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px var(--shadow-color-medium);
+}
+
+.photoSearchBtn{
+    padding:0.5rem 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 0.5rem;
+    border:0;
+    outline:none;
+    cursor: pointer;
+}
+
+.photoSearchInput{
+    padding:0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border:0;
+    outline:none;
+}

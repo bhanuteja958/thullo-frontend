@@ -1,0 +1,32 @@
+.listContainer{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width:325px;
+    cursor: pointer;
+}
+
+.listHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listName{
+    font-weight: var(--font-medium);
+}
+
+.cardMenuIcon{
+    color: var(--secondary-color);
+}
+
+.cardsContainer{
+    margin-top:1rem;
+    min-height:100vh;
+    padding:0.5rem;
+    background-color: var(--primary-color-medium);
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}

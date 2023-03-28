@@ -2,7 +2,7 @@ import {FC} from 'react';
 import classes from './SearchBar.module.css';
 
 interface SearchBarProps {
-
+    
 }
 
 const SearchBar:FC<SearchBarProps> = (props) => {
