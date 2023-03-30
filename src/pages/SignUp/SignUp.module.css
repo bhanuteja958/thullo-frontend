@@ -1,0 +1,78 @@
+.signUpContainer{
+    height:85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpCard{
+    width:max-content;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-radius:0.5rem;
+    box-shadow: 0 4px 12px var(--shadow-color-light);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.signUpHeading{
+    font-size:var(--h6-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.signUpSubHeading{
+    font-size: var(--small-size);
+    color: var(--secondary-color)
+}
+
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.signUpInputContainer{
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content auto;
+    border: 1px solid var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.signUpInputIcon{
+    color: var(--secondary-color);
+}
+
+.signUpInput{
+    font-size: var(--normal-size);
+    border:0;
+    width:100%;
+    outline: none;
+    padding-left:1rem;
+}
+
+.signUpInput::placeholder{
+    color: var(--secondary-color);
+}
+
+.signUpBtn{
+    padding:0.5rem 1rem;
+    font-size: var(--normal-size);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-weight: var(--font-medium);
+    cursor:pointer; 
+}  
+
+.loginNudge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
