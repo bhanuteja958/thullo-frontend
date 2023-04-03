@@ -16,7 +16,7 @@ const SignUp:FC<SignUpProps> = (props) => {
         <div className={classes.signUpContainer}>
             <div className={classes.signUpCard}>
                 <div className={classes.signUpHeader}>
-                    <p className={classes.signUpHeading}>SignIn</p>
+                    <p className={classes.signUpHeading}>Sign Up</p>
                     <p className={classes.signUpSubHeading}>Thullo - A simple project management tool</p>
                 </div>
                 <div className={classes.signUpForm}>
@@ -41,7 +41,7 @@ const SignUp:FC<SignUpProps> = (props) => {
                 <div className={classes.signUpFooter}>
                     <p className={classes.loginNudge}>
                         <span>Already have an account?</span>
-                        <a href="#">Sign Up</a>
+                        <a href="#">SignIn</a>
                     </p>
                 </div>
             </div>

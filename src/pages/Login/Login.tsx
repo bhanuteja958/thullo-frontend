@@ -15,7 +15,7 @@ const Login:FC<{}> = (props) => {
         <div className={classes.loginContainer}>
             <div className={classes.loginCard}>
                 <div className={classes.loginHeader}>
-                    <p className={classes.loginHeading}>SignIn</p>
+                    <p className={classes.loginHeading}>Sign In</p>
                     <p className={classes.loginSubHeading}>Thullo - A simple project management tool</p>
                 </div>
                 <div className={classes.loginForm}>
@@ -32,7 +32,7 @@ const Login:FC<{}> = (props) => {
                 <div className={classes.loginFooter}>
                     <p className={classes.signUpNudge}>
                         <span>Don't have an account?</span>
-                        <a href="#">Sign Up</a>
+                        <a href="#">SignUp</a>
                     </p>
                 </div>
             </div>
