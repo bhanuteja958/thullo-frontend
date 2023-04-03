@@ -1,0 +1,75 @@
+.profileDetailValuePic{
+    width:70px;
+    height:70px;
+    border-radius: 0.5rem;
+}
+
+.viewProfileTable{
+    width:60%;
+    border-collapse: separate;
+    border:2px solid var(--secondary-color-medium);
+    border-radius: 0.5rem;
+}
+
+.viewProfileTable td, th{
+    border-bottom:2px solid var(--secondary-color-medium);
+    padding:1rem;
+}
+
+
+th{
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+}
+
+tr:last-of-type td {
+    border:none !important;
+}
+
+.profileTableHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileTableHeaderLeft {
+    text-align: left;
+}
+
+.profileTableSubHeading{
+    font-weight: var(--font-medium);
+}
+
+.profileTableHeading{
+    font-weight:var(--font-semi-bold);
+    font-size: var(--h6-size);
+    font-family: var(--secondary-font-family);
+}
+
+.profileEditBtn{
+    padding:0.5rem 1rem;
+    display:flex;
+    align-items: center;
+    column-gap:0.5rem;
+    border-radius: 0.5rem;
+    border:2px solid var(--secondary-color-medium);
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.profileDetail{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+.profileDetailName{
+    text-transform: uppercase;
+    font-weight: var(--font-medium);
+}
+
+.profileDetailValueInput:read-only{
+    border:0;
+    outline: none;
+}

@@ -1,0 +1,19 @@
+.userProfileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    row-gap: 2rem;
+    padding:2.5rem;
+}
+
+.userProfileHeader{
+    text-align: center;
+}
+
+.userProfileHeading{
+    font-size: var(--h5-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--secondary-font-family);
+}
